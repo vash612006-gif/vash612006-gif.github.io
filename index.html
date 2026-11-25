@@ -1,1 +1,284 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vaishnavi Srivastava - ECE Student, Python and AI/ML Enthusiast.">
+  <title>Vaishnavi Srivastava | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h2 {
+      color: #a5b4fc;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: #0f172a;
+      color: white;
+      padding: 85px 8%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 7vw, 52px);
+      margin: 12px 0;
+    }
+
+    .hero span {
+      color: #a5b4fc;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      max-width: 650px;
+      margin: 15px auto 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #6366f1;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 7px;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    section {
+      padding: 65px 8%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+      color: #0f172a;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .skills, .projects, .certificates {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+
+    .card h3 {
+      color: #4f46e5;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #475569;
+      font-size: 14px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      color: #4f46e5;
+      text-decoration: none;
+      margin: 8px;
+      display: inline-block;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 22px;
+    }
+
+    @media(max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+
+      .hero {
+        padding: 65px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Vaishnavi.</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <p>Hello, welcome to my portfolio!</p>
+  <h1>I'm <span>Vaishnavi Srivastava</span></h1>
+  <h3>ECE Student | Python | AI/ML Enthusiast</h3>
+  <p>
+    Exploring technology, building practical projects
+    and learning how to solve real-world problems
+    through programming and innovation.
+  </p>
+  <a href="#projects" class="btn">Explore My Projects</a>
+  <a href="#contact" class="btn">Contact Me</a>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about">
+    <p>
+      I am an Electronics and Communication Engineering
+      student at Government Engineering College, Rajkot.
+      I have an interest in Python programming,
+      Artificial Intelligence and Machine Learning.
+      I enjoy learning new technologies and developing
+      practical projects that combine electronics and software.
+      My goal is to grow as a technology professional
+      through continuous learning and hands-on experience.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="card">
+      <h3>Programming</h3>
+      <p>C Programming, Python</p>
+    </div>
+    <div class="card">
+      <h3>AI & Machine Learning</h3>
+      <p>Machine Learning fundamentals, Python libraries, Data Analysis</p>
+    </div>
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>HTML and CSS - currently learning through practical projects.</p>
+    </div>
+    <div class="card">
+      <h3>Soft Skills</h3>
+      <p>Communication, Problem Solving, Teamwork and Learning</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>AI Motor Fault Detection</h3>
+      <p>
+        An ongoing project exploring machine learning
+        techniques for identifying motor faults using data analysis.
+      </p>
+      <p><strong>Status:</strong> In Progress</p>
+    </div>
+    <div class="card">
+      <h3>Mobile Projector</h3>
+      <p>
+        An academic Design Engineering project focused
+        on developing a mobile projector concept.
+      </p>
+      <p><strong>Domain:</strong> Electronics</p>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <h2>Certifications & Experience</h2>
+  <div class="certificates">
+    <div class="card">
+      <h3>Generative AI Internship</h3>
+      <p>SmartBridge - Summer Internship in Gen AI Career Accelerator.</p>
+    </div>
+    <div class="card">
+      <h3>Digital Marketing</h3>
+      <p>Digital Marketing Internship Completion Certificate.</p>
+    </div>
+    <div class="card">
+      <h3>Aptitude Test</h3>
+      <p>Aptitude Test Certificate.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let's Connect</h2>
+  <div class="contact">
+    <p>I am open to learning opportunities and internships.</p>
+    <a href="https://github.com/vash612006-gif" target="_blank">
+      GitHub Profile
+    </a>
+    <p>LinkedIn: Add your LinkedIn profile link here.</p>
+    <p>Email: Add your professional email here.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Vaishnavi Srivastava | Personal Portfolio</p>
+</footer>
+
+</body>
+</html>

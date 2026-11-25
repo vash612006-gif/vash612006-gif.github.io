@@ -1,282 +1,820 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Vaishnavi Srivastava - ECE Student, Python and AI/ML Enthusiast.">
-  <title>Vaishnavi Srivastava | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+<meta name="description" content="Vaishnavi Srivastava - Electronics and Communication Engineering student, Python programmer and AI/ML enthusiast. Explore my skills, projects and certifications.">
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8fafc;
-      color: #1e293b;
-      line-height: 1.7;
-    }
+<meta name="author" content="Vaishnavi Srivastava">
 
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+<title>Vaishnavi Srivastava | Personal Portfolio</title>
 
-    header h2 {
-      color: #a5b4fc;
-    }
+<style>
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 8px;
-      font-size: 14px;
-    }
+/* GENERAL SETTINGS */
 
-    .hero {
-      background: #0f172a;
-      color: white;
-      padding: 85px 8%;
-      text-align: center;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-    .hero h1 {
-      font-size: clamp(32px, 7vw, 52px);
-      margin: 12px 0;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  line-height: 1.7;
+}
 
-    .hero span {
-      color: #a5b4fc;
-    }
+a {
+  text-decoration: none;
+}
 
-    .hero p {
-      color: #cbd5e1;
-      max-width: 650px;
-      margin: 15px auto 25px;
-    }
+.container {
+  width: 88%;
+  max-width: 1100px;
+  margin: auto;
+}
 
-    .btn {
-      display: inline-block;
-      background: #6366f1;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 7px;
-      text-decoration: none;
-      margin: 5px;
-    }
+/* HEADER AND NAVIGATION */
 
-    section {
-      padding: 65px 8%;
-      max-width: 1100px;
-      margin: auto;
-    }
+header {
+  background: #0f172a;
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-    section h2 {
-      text-align: center;
-      font-size: 30px;
-      margin-bottom: 30px;
-      color: #0f172a;
-    }
+header h2 {
+  color: #a5b4fc;
+  font-size: 25px;
+}
 
-    .about {
-      text-align: center;
-      max-width: 750px;
-      margin: auto;
-    }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
-    .skills, .projects, .certificates {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
+nav a {
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
 
-    .card {
-      background: white;
-      padding: 24px;
-      border-radius: 12px;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-    }
+nav a:hover {
+  color: #a5b4fc;
+}
 
-    .card h3 {
-      color: #4f46e5;
-      margin-bottom: 10px;
-    }
+/* HERO SECTION */
 
-    .card p {
-      color: #475569;
-      font-size: 14px;
-    }
+.hero {
+  background: #0f172a;
+  color: white;
+  padding: 90px 8%;
+  text-align: center;
+}
 
-    .contact {
-      text-align: center;
-    }
+.hero .welcome {
+  color: #cbd5e1;
+  font-size: 19px;
+}
 
-    .contact a {
-      color: #4f46e5;
-      text-decoration: none;
-      margin: 8px;
-      display: inline-block;
-    }
+.hero h1 {
+  font-size: clamp(32px, 7vw, 52px);
+  margin: 15px 0;
+}
 
-    footer {
-      background: #0f172a;
-      color: #cbd5e1;
-      text-align: center;
-      padding: 22px;
-    }
+.hero span {
+  color: #a5b4fc;
+}
 
-    @media(max-width: 600px) {
-      header {
-        justify-content: center;
-        text-align: center;
-      }
+.hero h3 {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
 
-      nav {
-        text-align: center;
-      }
+.hero p {
+  color: #cbd5e1;
+  max-width: 650px;
+  margin: 15px auto 25px;
+}
 
-      nav a {
-        display: inline-block;
-        margin: 5px;
-      }
+.btn {
+  display: inline-block;
+  background: #6366f1;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 7px;
+  text-decoration: none;
+  margin: 6px;
+  transition: 0.3s;
+}
 
-      .hero {
-        padding: 65px 6%;
-      }
-    }
-  </style>
+.btn:hover {
+  background: #818cf8;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #a5b4fc;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+  padding: 70px 8%;
+  max-width: 1100px;
+  margin: auto;
+  scroll-margin-top: 75px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 35px;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  text-align: center;
+  max-width: 780px;
+  margin: auto;
+}
+
+.about p {
+  color: #475569;
+  font-size: 16px;
+}
+
+/* EDUCATION SECTION */
+
+.education {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.education-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.education-card h3 {
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+.education-card p {
+  color: #475569;
+  font-size: 14px;
+}
+
+/* SKILLS SECTION */
+
+.skills,
+.projects,
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #475569;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* PROJECT STATUS */
+
+.tag {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.tag-progress {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.project-link {
+  display: inline-block;
+  color: #4f46e5;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* CAREER OBJECTIVE */
+
+.career-box {
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.career-box p {
+  color: #334155;
+}
+
+/* CERTIFICATES */
+
+.certificates .card {
+  text-align: center;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  text-align: center;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 35px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact p {
+  color: #475569;
+  margin-bottom: 18px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.contact a {
+  color: #4f46e5;
+  text-decoration: none;
+  border: 1px solid #c7d2fe;
+  padding: 9px 17px;
+  border-radius: 7px;
+  display: inline-block;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  background: #eef2ff;
+}
+
+/* FOOTER */
+
+footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #a5b4fc;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media(max-width: 650px) {
+
+  header {
+    justify-content: center;
+    text-align: center;
+    padding: 15px 5%;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 70px 6%;
+  }
+
+  .hero h3 {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 55px 6%;
+  }
+
+  section h2 {
+    font-size: 27px;
+  }
+
+  .card {
+    padding: 21px;
+  }
+
+  .contact {
+    padding: 25px 15px;
+  }
+
+}
+
+</style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
+
   <h2>Vaishnavi.</h2>
+
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
+    <a href="#education">Education</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
     <a href="#contact">Contact</a>
   </nav>
+
 </header>
 
+<!-- HOME SECTION -->
+
 <div class="hero" id="home">
-  <p>Hello, welcome to my portfolio!</p>
-  <h1>I'm <span>Vaishnavi Srivastava</span></h1>
-  <h3>ECE Student | Python | AI/ML Enthusiast</h3>
+
+  <p class="welcome">
+    Hello, welcome to my portfolio!
+  </p>
+
+  <h1>
+    I'm <span>Vaishnavi Srivastava</span>
+  </h1>
+
+  <h3>
+    ECE Student | Python | AI/ML Enthusiast
+  </h3>
+
   <p>
     Exploring technology, building practical projects
     and learning how to solve real-world problems
     through programming and innovation.
   </p>
-  <a href="#projects" class="btn">Explore My Projects</a>
-  <a href="#contact" class="btn">Contact Me</a>
+
+  <a href="#projects" class="btn">
+    Explore My Projects
+  </a>
+
+  <a href="#contact" class="btn btn-outline">
+    Contact Me
+  </a>
+
 </div>
 
+<!-- ABOUT SECTION -->
+
 <section id="about">
+
   <h2>About Me</h2>
+
+  <p class="section-subtitle">
+    Get to know me
+  </p>
+
   <div class="about">
+
     <p>
       I am an Electronics and Communication Engineering
       student at Government Engineering College, Rajkot.
+
       I have an interest in Python programming,
       Artificial Intelligence and Machine Learning.
+
       I enjoy learning new technologies and developing
       practical projects that combine electronics and software.
+
+      I am continuously working to improve my technical
+      knowledge, programming abilities and problem-solving skills.
+
       My goal is to grow as a technology professional
       through continuous learning and hands-on experience.
     </p>
+
   </div>
+
 </section>
+
+<!-- EDUCATION SECTION -->
+
+<section id="education">
+
+  <h2>Education</h2>
+
+  <p class="section-subtitle">
+    My academic background
+  </p>
+
+  <div class="education">
+
+    <div class="education-card">
+
+      <h3>Bachelor of Engineering</h3>
+
+      <p>
+        Electronics and Communication Engineering
+      </p>
+
+      <p>
+        Government Engineering College, Rajkot
+      </p>
+
+      <p>
+        Expected Graduation: 2027
+      </p>
+
+    </div>
+
+    <div class="education-card">
+
+      <h3>Higher Secondary Education</h3>
+
+      <p>
+        Kendriya Vidyalaya ONGC Mehsana
+      </p>
+
+      <p>
+        CBSE Board
+      </p>
+
+      <p>
+        Class 12 - 2023
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TECHNICAL SKILLS -->
 
 <section id="skills">
+
   <h2>Technical Skills</h2>
+
+  <p class="section-subtitle">
+    Technologies and skills I am developing
+  </p>
+
   <div class="skills">
+
     <div class="card">
+
       <h3>Programming</h3>
-      <p>C Programming, Python</p>
+
+      <p>
+        C Programming, Python
+      </p>
+
     </div>
+
     <div class="card">
+
       <h3>AI & Machine Learning</h3>
-      <p>Machine Learning fundamentals, Python libraries, Data Analysis</p>
+
+      <p>
+        Machine Learning Fundamentals,
+        Python Libraries, Data Analysis
+      </p>
+
     </div>
+
     <div class="card">
+
       <h3>Web Development</h3>
-      <p>HTML and CSS - currently learning through practical projects.</p>
+
+      <p>
+        HTML, CSS and Responsive Web Design
+      </p>
+
     </div>
+
     <div class="card">
-      <h3>Soft Skills</h3>
-      <p>Communication, Problem Solving, Teamwork and Learning</p>
+
+      <h3>Tools & Platforms</h3>
+
+      <p>
+        GitHub, Google Colab
+      </p>
+
     </div>
+
+    <div class="card">
+
+      <h3>Soft Skills</h3>
+
+      <p>
+        Communication, Problem Solving,
+        Teamwork and Adaptability
+      </p>
+
+    </div>
+
   </div>
+
 </section>
+
+<!-- PROJECTS SECTION -->
 
 <section id="projects">
+
   <h2>My Projects</h2>
+
+  <p class="section-subtitle">
+    Academic and personal projects
+  </p>
+
   <div class="projects">
+
     <div class="card">
+
+      <span class="tag tag-progress">
+        In Progress
+      </span>
+
       <h3>AI Motor Fault Detection</h3>
+
       <p>
-        An ongoing project exploring machine learning
-        techniques for identifying motor faults using data analysis.
+        An ongoing AI/ML project exploring
+        machine learning techniques for identifying
+        motor faults using data analysis.
       </p>
-      <p><strong>Status:</strong> In Progress</p>
+
+      <p>
+        <strong>Technologies:</strong>
+        Python, Machine Learning and Data Analysis
+      </p>
+
+      <p>
+        <strong>Domain:</strong>
+        Electronics and Artificial Intelligence
+      </p>
+
     </div>
+
     <div class="card">
+
+      <span class="tag">
+        Academic Project
+      </span>
+
       <h3>Mobile Projector</h3>
+
       <p>
-        An academic Design Engineering project focused
-        on developing a mobile projector concept.
+        An academic Design Engineering project
+        focused on developing a mobile projector
+        concept using engineering principles.
       </p>
-      <p><strong>Domain:</strong> Electronics</p>
+
+      <p>
+        <strong>Domain:</strong>
+        Electronics and Design Engineering
+      </p>
+
     </div>
+
+    <div class="card">
+
+      <span class="tag">
+        Published
+      </span>
+
+      <h3>Personal Portfolio Website</h3>
+
+      <p>
+        A responsive personal website developed
+        to showcase my education, technical skills,
+        projects and achievements.
+      </p>
+
+      <p>
+        <strong>Technologies:</strong>
+        HTML, CSS and GitHub Pages
+      </p>
+
+      <a
+        href="https://github.com/vash612006-gif/vash612006-gif.github.io"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-link">
+        View Source Code →
+      </a>
+
+    </div>
+
   </div>
+
 </section>
+
+<!-- CERTIFICATIONS SECTION -->
 
 <section id="certificates">
+
   <h2>Certifications & Experience</h2>
+
+  <p class="section-subtitle">
+    My learning achievements
+  </p>
+
   <div class="certificates">
+
     <div class="card">
+
       <h3>Generative AI Internship</h3>
-      <p>SmartBridge - Summer Internship in Gen AI Career Accelerator.</p>
+
+      <p>
+        SmartBridge - Summer Internship
+        in Gen AI Career Accelerator.
+      </p>
+
     </div>
+
     <div class="card">
+
       <h3>Digital Marketing</h3>
-      <p>Digital Marketing Internship Completion Certificate.</p>
+
+      <p>
+        Digital Marketing Internship
+        Completion Certificate.
+      </p>
+
     </div>
+
     <div class="card">
+
       <h3>Aptitude Test</h3>
-      <p>Aptitude Test Certificate.</p>
+
+      <p>
+        Aptitude Test Certificate.
+      </p>
+
     </div>
+
   </div>
+
 </section>
+
+<!-- CAREER OBJECTIVE -->
+
+<section id="career">
+
+  <h2>Career Objective</h2>
+
+  <p class="section-subtitle">
+    My professional goal
+  </p>
+
+  <div class="career-box">
+
+    <p>
+      I am looking for internship opportunities in
+      Software Development, Artificial Intelligence
+      and Machine Learning where I can apply my
+      programming knowledge, gain practical industry
+      experience, work on real-world projects and
+      learn from experienced professionals.
+
+      I am enthusiastic about continuous learning
+      and contributing to innovative solutions.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- CONTACT SECTION -->
 
 <section id="contact">
+
   <h2>Let's Connect</h2>
+
+  <p class="section-subtitle">
+    Feel free to connect with me
+  </p>
+
   <div class="contact">
-    <p>I am open to learning opportunities and internships.</p>
-    <a href="https://github.com/vash612006-gif" target="_blank">
-      GitHub Profile
-    </a>
-    <p>LinkedIn:www.linkedin.com/in/gecrec230200111116 </p>
-    <p>Email: vash.612006@gmail.com </p>
+
+    <p>
+      I am actively looking for internship opportunities
+      where I can learn, contribute and develop my
+      technical skills.
+    </p>
+
+    <div class="contact-links">
+
+      <a href="mailto:vash.612006@gmail.com">
+        Email Me
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/gecrec23001111116"
+        target="_blank"
+        rel="noopener noreferrer">
+        LinkedIn
+      </a>
+
+      <a
+        href="https://github.com/vash612006-gif"
+        target="_blank"
+        rel="noopener noreferrer">
+        GitHub
+      </a>
+
+    </div>
+
   </div>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
-  <p>© 2026 Vaishnavi Srivastava | Personal Portfolio</p>
+
+  <p>
+    © 2026 Vaishnavi Srivastava.
+    All Rights Reserved.
+  </p>
+
+  <p>
+    Designed and developed by Vaishnavi.
+  </p>
+
+  <p>
+    <a href="#home">Back to Top ↑</a>
+  </p>
+
 </footer>
 
 </body>
